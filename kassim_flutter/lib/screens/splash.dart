@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kassim_flutter/Animations/FadeAnimation.dart';
+import 'package:kassim_flutter/screens/pass_code.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -110,7 +111,12 @@ class _SplashScreen extends State<SplashScreen> {
               CustomElevation(
                 child: FlatButton(
                   //elevation: 1,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => PassCode()),
+                    );
+                  },
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0)),
                   padding: EdgeInsets.all(0.0),

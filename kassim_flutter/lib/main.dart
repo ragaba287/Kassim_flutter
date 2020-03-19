@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kassim_flutter/screens/splash.dart';
+import 'package:kassim_flutter/screens/pass_code.dart';
 
 void main() => runApp(MyApp());
 
